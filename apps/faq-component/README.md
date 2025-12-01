@@ -37,7 +37,3 @@ These should be rendered in the FAQ component, where clicking any question revea
 3.  Clicking any question should reveal the answer.
 4.  Clicking a question again should hide the answer.
 5.  The first answer should be revealed by default.
-
-## Mockup
-
-![FAQ Component Mockup](https://frontendeval.com/images/faq-component-1.png)
