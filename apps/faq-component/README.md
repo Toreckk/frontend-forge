@@ -32,8 +32,8 @@ These should be rendered in the FAQ component, where clicking any question revea
 
 ## Requirements
 
-1.  The FAQ component should receive the list of questions in the JS object format above.
-2.  Every question from the object should be displayed, with an adjacent chevron as in the mockup (see challenge link).
-3.  Clicking any question should reveal the answer.
-4.  Clicking a question again should hide the answer.
-5.  The first answer should be revealed by default.
+1. The FAQ component should receive the list of questions in the JS object format above.
+2. Every question from the object should be displayed, with an adjacent chevron as in the mockup (see challenge link).
+3. Clicking any question should reveal the answer.
+4. Clicking a question again should hide the answer.
+5. The first answer should be revealed by default.

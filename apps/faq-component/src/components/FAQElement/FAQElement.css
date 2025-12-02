@@ -1,0 +1,49 @@
+.faq-section {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: none;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-question-button {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--accent-bg);
+  border-radius: 50%;
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}

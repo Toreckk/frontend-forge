@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { FAQComponent } from "./components/FAQComponent/FAQComponent";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const FAQ = [
+    {
+      question: "How many bones does a cat have?",
+      answer: "A cat has 230 bones - 6 more than a human",
+    },
+    {
+      question: "How much do cats sleep?",
+      answer: "The average cat sleeps 12-16 hours per day",
+    },
+    {
+      question: "How long do cats live",
+      answer:
+        "Outdoor cats live 5 years on average. Indoor\ncats live 15 years on average.",
+    },
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Frequently Asked Questions</h1>
+      <FAQComponent faqs={FAQ} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
