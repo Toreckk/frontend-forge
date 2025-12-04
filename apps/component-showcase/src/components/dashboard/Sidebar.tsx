@@ -1,6 +1,6 @@
 interface Filters {
   difficulty: string[];
-  type: string[];
+  status: string[];
   languages: string[];
 }
 
@@ -48,21 +48,21 @@ export function Sidebar({ filters, setFilters }: SidebarProps) {
 
       <div className="mb-8">
         <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--text-secondary)]">
-          Type
+          Status
         </h3>
         <div className="space-y-2">
-          {["Free", "Free+", "Premium"].map((type) => (
+          {["Completed", "WIP", "Archived", "On Hold"].map((status) => (
             <label
-              key={type}
+              key={status}
               className="flex items-center gap-2 text-sm text-[var(--text-primary)]"
             >
               <input
                 type="checkbox"
-                checked={filters.type.includes(type)}
-                onChange={() => handleFilterChange("type", type)}
+                checked={filters.status.includes(status)}
+                onChange={() => handleFilterChange("status", status)}
                 className="rounded border-[var(--border-subtle)] text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]"
               />
-              {type}
+              {status}
             </label>
           ))}
         </div>

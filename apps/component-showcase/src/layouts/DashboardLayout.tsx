@@ -8,7 +8,7 @@ export function DashboardLayout() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filters, setFilters] = useState({
     difficulty: [] as string[],
-    type: [] as string[],
+    status: [] as string[],
     languages: [] as string[],
   });
 
@@ -29,8 +29,11 @@ export function DashboardLayout() {
       return false;
     }
 
-    // Type Filter
-    if (filters.type.length > 0 && !filters.type.includes(challenge.type)) {
+    // Status Filter
+    if (
+      filters.status.length > 0 &&
+      !filters.status.includes(challenge.status)
+    ) {
       return false;
     }
 

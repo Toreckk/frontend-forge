@@ -5,7 +5,7 @@ export const info: ChallengeMeta = {
   title: "QR code component",
   thumbnailUrl:
     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/cybxdhr4wewlscvco9dd.jpg",
-  type: "Free",
+  status: "Completed",
   difficulty: "Newbie",
   level: 1,
   languages: ["HTML", "CSS"],

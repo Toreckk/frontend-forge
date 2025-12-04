@@ -5,13 +5,17 @@ export type Difficulty =
   | "Advanced"
   | "Guru";
 
+export type status = "Completed" | "WIP" | "Archived" | "On Hold";
+
+export type Language = "HTML" | "CSS" | "JS" | "API";
+
 export interface ChallengeMeta {
   id: string;
   title: string;
   thumbnailUrl: string;
-  type: "Free" | "Free+" | "Premium";
+  status: status;
   difficulty: Difficulty;
   level: number;
-  languages: ("HTML" | "CSS" | "JS" | "API")[];
+  languages: Language[];
   description: string;
 }

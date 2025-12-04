@@ -5,7 +5,7 @@ export const info: ChallengeMeta = {
   title: "Space tourism multi-page website",
   thumbnailUrl:
     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/x8skdsukkmwiwxejthio.jpg",
-  type: "Free+",
+  status: "On Hold",
   difficulty: "Intermediate",
   level: 3,
   languages: ["HTML", "CSS", "JS"],

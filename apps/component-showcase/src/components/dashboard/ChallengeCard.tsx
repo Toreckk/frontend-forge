@@ -7,11 +7,11 @@ interface ChallengeCardProps {
 }
 
 export function ChallengeCard({ challenge }: ChallengeCardProps) {
-  // Type badge colors
-  const typeBadgeColors = {
-    Free: "#3e54a3",
-    "Free+": "#ff8f5e",
-    Premium: "#e62878",
+  const statusBadgeColors: Record<string, string> = {
+    Completed: "bg-emerald-500",
+    WIP: "bg-amber-500",
+    Archived: "bg-slate-500",
+    "On Hold": "bg-orange-500",
   };
 
   // Language colors
@@ -35,12 +35,13 @@ export function ChallengeCard({ challenge }: ChallengeCardProps) {
           className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
         />
 
-        {/* Type Badge */}
+        {/* Status Badge */}
         <div
-          className="absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-md"
-          style={{ backgroundColor: typeBadgeColors[challenge.type] }}
+          className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-md ${
+            statusBadgeColors[challenge.status] || "bg-gray-500"
+          }`}
         >
-          {challenge.type}
+          {challenge.status}
         </div>
       </div>
 
