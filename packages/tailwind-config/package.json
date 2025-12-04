@@ -1,0 +1,14 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "tailwind.config.ts",
+  "exports": {
+    ".": "./tailwind.config.ts",
+    "./postcss": "./postcss.config.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.16"
+  }
+}
