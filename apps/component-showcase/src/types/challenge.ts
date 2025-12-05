@@ -1,3 +1,5 @@
+import type { ComponentType, LazyExoticComponent } from "react";
+
 export type Difficulty =
   | "Newbie"
   | "Junior"
@@ -18,4 +20,5 @@ export interface ChallengeMeta {
   level: number;
   languages: Language[];
   description: string;
+  component: LazyExoticComponent<ComponentType>;
 }
