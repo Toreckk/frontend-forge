@@ -36,15 +36,3 @@
     @apply bg-[var(--bg-app)] text-[var(--text-primary)] transition-colors duration-200;
   }
 }
-
-@layer utilities {
-  .bg-tertiary {
-    background-color: var(--color-tertiary);
-  }
-  .text-primary {
-    color: var(--color-primary);
-  }
-  .text-secondary {
-    color: var(--color-secondary);
-  }
-}
