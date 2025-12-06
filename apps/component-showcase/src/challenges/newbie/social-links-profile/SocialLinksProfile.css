@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  /* --- Colors --- */
+  --slp-color-green: hsl(75, 94%, 57%);
+  --slp-color-white: hsl(0, 0%, 100%);
+  --slp-color-grey-700: hsl(0, 0%, 20%);
+  --slp-color-grey-800: hsl(0, 0%, 12%);
+  --slp-color-grey-900: hsl(0, 0%, 8%);
+
+  /* --- Typography --- */
+  --slp-font-family: "Inter", sans-serif;
+
+  /* Font Sizes */
+  --slp-font-size-heading-lg: 24px;
+  --slp-font-size-heading-md: 20px;
+  --slp-font-size-heading-sm: 16px;
+  --slp-font-size-body: 14px;
+  --slp-font-size-caption: 12px;
+
+  /* Line Heights */
+  --slp-line-height-heading: 1.2;
+  --slp-line-height-body: 1.5;
+
+  /* Font Weights */
+  --slp-font-weight-regular: 400;
+  --slp-font-weight-semibold: 600;
+  --slp-font-weight-bold: 700;
+
+  /* --- Spacing & Shapes --- */
+  --slp-spacing-md: 16px;
+  --slp-spacing-lg: 24px;
+  --slp-spacing-xl: 40px;
+  --slp-radius: 12px;
+}
+
+.social-links-profile-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--slp-color-grey-900);
+  font-family: var(--slp-font-family);
+  margin: 0;
+  padding: 0;
+}
+
+.social-links-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-color: var(--slp-color-grey-800);
+  padding: var(--slp-spacing-lg);
+  border-radius: var(--slp-radius);
+  width: 90%;
+  max-width: 384px;
+}
+
+.social-links-profile-personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-profile-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.social-links-profile-name {
+  font-size: var(--slp-font-size-heading-lg);
+  font-weight: var(--slp-font-weight-bold);
+  color: var(--slp-color-white);
+}
+
+.social-links-profile-location {
+  font-size: var(--slp-font-size-body);
+  font-weight: var(--slp-font-weight-bold);
+  color: var(--slp-color-green);
+}
+
+.social-links-profile-description {
+  font-size: var(--slp-font-size-body);
+  font-weight: var(--slp-font-weight-regular);
+  color: var(--slp-color-white);
+}
+
+.social-links-profile-social-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--slp-spacing-md);
+  color: var(--slp-color-white);
+}
+
+.social-links-profile-social-link {
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  font-size: var(--slp-font-size-body);
+  font-weight: var(--slp-font-weight-bold);
+  background-color: var(--slp-color-grey-700);
+
+  padding: var(--slp-spacing-md);
+  border-radius: var(--slp-radius);
+}
+
+.social-links-profile-social-link:hover {
+  background-color: var(--slp-color-green);
+  color: var(--slp-color-grey-900);
+}
+
+@media (min-width: 600px) {
+  .social-links-profile-card {
+    padding: var(--slp-spacing-xl);
+  }
+}
