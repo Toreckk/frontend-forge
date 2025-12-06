@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /* --- Colors --- */
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 100%, 100%);
+  --color-navy-50: hsl(221, 100%, 96%);
+  --color-navy-200: hsl(241, 100%, 89%);
+  --color-navy-950: hsl(224, 30%, 27%);
+  --color-blue-800: hsl(234, 85%, 45%);
+  --color-blue-50: hsl(234, 71%, 97%);
+  --color-yellow-400: hsl(39, 100%, 56%);
+  --color-yellow-50: hsl(38, 100%, 98%);
+  --color-red-400: hsl(0, 100%, 67%);
+  --color-red-50: hsl(0, 100%, 98%);
+  --color-green-500: hsl(166, 100%, 37%);
+  --color-green-50: hsl(162, 63%, 97%);
+
+  /* --- Gradients --- */
+  --gradient-one: linear-gradient(
+    to bottom,
+    hsla(256, 71%, 46%, 1) 0%,
+    hsla(241, 72%, 46%, 0) 100%
+  );
+
+  --gradient-two: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%) 100%
+  );
+
+  /* --- Typography --- */
+  --font-family: "Hanken Grotesk", sans-serif;
+
+  /* Font Weights */
+  --slp-font-weight-regular: 400;
+  --slp-font-weight-medium: 500;
+  --slp-font-weight-bold: 700;
+  --slp-font-weight-extrabold: 800;
+
+  /* Font Weights */
+  --slp-font-weight-medium: 500;
+  --slp-font-weight-bold: 700;
+  --slp-font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --slp-line-height-tight: 100%;
+  --slp-line-height-default: 130%;
+
+  /* Font Sizes */
+  --slp-text-size-32: 32px;
+  --slp-text-size-24: 24px;
+  --slp-text-size-20: 20px;
+  --slp-text-size-16: 16px;
+  --slp-text-size-14: 14px;
+
+  /* Text Preset 1: 32px / 100% / ExtraBold */
+  --text-preset-1-size: var(--slp-text-size-32);
+  --text-preset-1-line-height: var(--slp-line-height-tight);
+  --text-preset-1-weight: var(--slp-font-weight-extrabold);
+
+  /* Text Preset 2: 24px / 130% / ExtraBold */
+  --text-preset-2-size: var(--slp-text-size-24);
+  --text-preset-2-line-height: var(--slp-line-height-default);
+  --text-preset-2-weight: var(--slp-font-weight-extrabold);
+
+  /* Text Preset 3: 20px / 130% / Bold */
+  --text-preset-3-size: var(--slp-text-size-20);
+  --text-preset-3-line-height: var(--slp-line-height-default);
+  --text-preset-3-weight: var(--slp-font-weight-bold);
+
+  /* Text Preset 4: 24px / 130% / ExtraBold */
+  --text-preset-4-size: var(--slp-text-size-24);
+  --text-preset-4-line-height: var(--slp-line-height-default);
+  --text-preset-4-weight: var(--slp-font-weight-extrabold);
+
+  /* Text Preset 5: 16px / 130% / Bold */
+  --text-preset-5-size: var(--slp-text-size-16);
+  --text-preset-5-line-height: var(--slp-line-height-default);
+  --text-preset-5-weight: var(--slp-font-weight-bold);
+
+  /* Text Preset 6: 14px / 130% / Medium */
+  --text-preset-6-size: var(--slp-text-size-14);
+  --text-preset-6-line-height: var(--slp-line-height-default);
+  --text-preset-6-weight: var(--slp-font-weight-medium);
+
+  /* Text Preset 7: 14px / 130% / Bold */
+  --text-preset-7-size: var(--slp-text-size-14);
+  --text-preset-7-line-height: var(--slp-line-height-default);
+  --text-preset-7-weight: var(--slp-font-weight-bold);
+
+  /* --- Spacing & Shapes --- */
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-1000: 80px;
+  --radius-1: 32px;
+
+  font-family: var(--font-family);
+  background-color: var(--color-blue-50);
+}
+
+.results-summary-wrapper {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  gap: 24px;
+}
+
+.results-score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--gradient-two);
+  height: 356px;
+  width: 100%;
+  border-radius: 0 0px 32px 32px;
+  color: var(--color-white);
+}
+
+.results-score-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.results-score-card-title {
+  color: var(--color-navy-200);
+  font-size: 18px;
+  line-height: var(--text-preset-2-line-height);
+  font-weight: 700;
+}
+
+.results-score-card-score {
+  background-image: var(--gradient-one);
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-score-card-score-value {
+  font-size: 56px;
+  line-height: var(--text-preset-2-line-height);
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+
+.results-score-card-score-total {
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  opacity: 0.51;
+}
+
+.results-score-card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.results-score-card-description-title {
+  font-size: 24px;
+  line-height: var(--text-preset-2-line-height);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.results-score-card-description-text {
+  max-width: 260px;
+  font-size: 16px;
+  line-height: var(--text-preset-2-line-height);
+  font-weight: 400;
+  color: var(--color-navy-200);
+}
+
+.results-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  width: 315px;
+}
+
+.results-summary-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.results-summary-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.results-summary-card-content-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.results-summary-card-content-item-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.results-summary-card-content-item-score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 600px) {
+  .results-summary-wrapper {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+  }
+  .results-score-card {
+    width: 338px;
+    height: 512px;
+    border-radius: 32px;
+  }
+
+  .results-score-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 200px;
+  }
+  .results-score-card-title {
+    font-size: 24px;
+    line-height: var(--text-preset-2-line-height);
+    font-weight: 700;
+  }
+
+  .results-score-card-score {
+    width: 200px;
+    height: 200px;
+  }
+
+  .results-score-card-score-total {
+    font-size: 18px;
+  }
+
+  .results-score-card-score-value {
+    font-size: 72px;
+    line-height: 100%;
+    font-weight: 700;
+  }
+
+  .results-score-card-description-title {
+    font-size: 32px;
+  }
+
+  .results-score-card-description-text {
+    font-size: 18px;
+  }
+}
