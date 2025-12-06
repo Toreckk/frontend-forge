@@ -8,7 +8,7 @@ export const info: ChallengeMeta = {
   title: "Social links profile component",
   thumbnailUrl:
     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sfsa14rwjz0wp7lzel2x.jpg",
-  status: "WIP",
+  status: "Completed",
   difficulty: "Newbie",
   level: 1,
   languages: ["HTML", "CSS"],
