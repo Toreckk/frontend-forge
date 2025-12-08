@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle-theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.navbar-title {
+  font-size: var(--font-size-26);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-150);
+  letter-spacing: var(--letter-spacing-2-5);
+  color: var(--text-primary);
+}
+
+.toggle-theme-text {
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-150);
+  letter-spacing: var(--letter-spacing-2-5);
+  color: var(--text-secondary);
+}
+
+.toggle-theme-icon {
+  width: var(--spacing-250);
+  height: var(--spacing-250);
+}

@@ -1,0 +1,33 @@
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-250);
+}
+
+.username {
+  color: var(--color-neutral-700);
+  font-size: var(--font-size-26);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-120);
+}
+
+.handle {
+  color: var(--color-blue-500);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-150);
+}
+
+.joined-date {
+  color: var(--color-neutral-500);
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-150);
+}
+
+.profile-image {
+  height: 70px;
+  width: 70px;
+  border-radius: var(--radius-full);
+}
