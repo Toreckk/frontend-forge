@@ -8,7 +8,7 @@ export const info: ChallengeMeta = {
   title: "Results summary component",
   thumbnailUrl:
     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ib4mqpivabisoekqd7zr.jpg",
-  status: "WIP",
+  status: "Completed",
   difficulty: "Newbie",
   level: 1,
   languages: ["HTML", "CSS"],
