@@ -11,6 +11,7 @@
   box-shadow: var(--boxshadow-primary);
   padding: var(--spacing-400) var(--spacing-300);
   width: 100%;
+  width: 100%;
 }
 
 .profile-image {
