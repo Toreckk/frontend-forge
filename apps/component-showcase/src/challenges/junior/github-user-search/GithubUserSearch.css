@@ -74,6 +74,9 @@
   --radius-24: 24px;
   --radius-full: 999px;
 
+  /* --- Boxshadow --- */
+  --boxshadow-primary: 0px 16px 30px -10px rgba(70, 96, 187, 0.19);
+
   /* --- Global Settings --- */
   font-family: var(--font-family);
 }
@@ -82,8 +85,13 @@
   /* Theme Variables - Light Mode (Default) */
   --bg-primary: var(--color-neutral-100);
   --bg-secondary: var(--color-neutral-0);
-  --text-primary: var(--color-neutral-900);
+  --text-primary: var(--color-neutral-700);
   --text-secondary: var(--color-neutral-500);
+  --text-accent: var(--color-blue-500);
+  --text-opacity-1: 75%;
+
+  --icon-primary: var(--color-neutral-500);
+  --icon-secondary: var(--color-neutral-500);
 
   background-color: var(--bg-primary);
   min-height: 100vh;
@@ -95,7 +103,23 @@
   --bg-primary: var(--color-neutral-900);
   --bg-secondary: var(--color-neutral-800);
   --text-primary: var(--color-neutral-0);
-  --text-secondary: var(--color-neutral-300);
+  --text-secondary: var(--color-neutral-0);
+  --text-accent: var(--color-blue-300);
+  --text-opacity-1: 70%;
+  --icon-primary: var(--color-neutral-0);
+  --icon-secondary: var(--color-neutral-200);
+}
+
+@media (min-width: 1024px) {
+  .github-user-search {
+    width: 100vw;
+    height: 100vh;
+    padding: 130px 355px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .main-content {
@@ -110,4 +134,16 @@
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    min-width: 704px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    min-width: 730px;
+  }
 }

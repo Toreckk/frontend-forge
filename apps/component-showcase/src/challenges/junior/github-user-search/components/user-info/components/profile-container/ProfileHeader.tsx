@@ -1,14 +1,14 @@
 import type { GithubUser } from "../../../../types/github";
-import "./ProfileContainer.css";
+import "./ProfileHeader.css";
 
-interface ProfileContainerProps {
+interface ProfileHeaderProps {
   user: GithubUser | null;
 }
 
-export const ProfileContainer = ({ user }: ProfileContainerProps) => {
+export const ProfileHeader = ({ user }: ProfileHeaderProps) => {
   return (
-    <div className="profile-container">
-      <img src={user?.avatar_url} alt="" className="profile-image" />
+    <div className="profile-header">
+      <img src={user?.avatar_url} alt="User avatar" className="profile-image" />
       <div className="profile-header">
         <div className="user-details">
           <p className="username">{user?.name}</p>

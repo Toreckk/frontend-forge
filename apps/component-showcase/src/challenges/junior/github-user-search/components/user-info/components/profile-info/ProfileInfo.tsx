@@ -1,8 +1,8 @@
 import type { GithubUser } from "../../../../types/github";
-import iconLocation from "../../../../assets/icon-location.svg";
-import iconTwitter from "../../../../assets/icon-twitter.svg";
-import iconBlog from "../../../../assets/icon-website.svg";
-import iconCompany from "../../../../assets/icon-company.svg";
+import { LocationIcon } from "../../../icons/LocationIcon";
+import { TwitterIcon } from "../../../icons/TwitterIcon";
+import { WebsiteIcon } from "../../../icons/WebsiteIcon";
+import { CompanyIcon } from "../../../icons/CompanyIcon";
 import "./ProfileInfo.css";
 
 interface ProfileInfoProps {
@@ -29,22 +29,22 @@ export const ProfileInfo = ({ user }: ProfileInfoProps) => {
       </div>
       <div className="links-section">
         <div className="link-item">
-          <img src={iconLocation} alt="Location" className="icon" />
+          <LocationIcon className="icon" aria-label="Location" />
           <p className="link-value">{user?.location || "Not available"}</p>
         </div>
 
         <div className="link-item">
-          <img src={iconTwitter} alt="Twitter" className="icon" />
+          <TwitterIcon className="icon" aria-label="Twitter" />
           <p className="link-value">
             {user?.twitter_username || "Not available"}
           </p>
         </div>
         <div className="link-item">
-          <img src={iconBlog} alt="Blog" className="icon" />
+          <WebsiteIcon className="icon" aria-label="Blog" />
           <p className="link-value">{user?.blog || "Not available"}</p>
         </div>
         <div className="link-item">
-          <img src={iconCompany} alt="Company" className="icon" />
+          <CompanyIcon className="icon" aria-label="Company" />
           <p className="link-value">{user?.company || "Not available"}</p>
         </div>
       </div>

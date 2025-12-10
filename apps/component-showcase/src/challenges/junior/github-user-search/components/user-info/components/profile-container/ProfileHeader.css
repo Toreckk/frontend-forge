@@ -1,4 +1,4 @@
-.profile-container {
+.profile-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,21 +6,21 @@
 }
 
 .username {
-  color: var(--color-neutral-700);
+  color: var(--text-primary);
   font-size: var(--font-size-26);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-120);
 }
 
 .handle {
-  color: var(--color-blue-500);
+  color: var(--text-accent);
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-150);
 }
 
 .joined-date {
-  color: var(--color-neutral-500);
+  color: var(--text-secondary);
   font-size: var(--font-size-15);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-150);

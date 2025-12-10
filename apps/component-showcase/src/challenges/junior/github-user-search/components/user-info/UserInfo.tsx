@@ -1,4 +1,4 @@
-import { ProfileContainer } from "./components/profile-container/ProfileContainer";
+import { ProfileHeader } from "./components/profile-container/ProfileHeader";
 import { ProfileInfo } from "./components/profile-info/ProfileInfo";
 import "./UserInfo.css";
 import type { GithubUser } from "../../types/github";
@@ -10,7 +10,7 @@ interface UserInfoProps {
 export const UserInfo = ({ user }: UserInfoProps) => {
   return (
     <div className="user-info">
-      <ProfileContainer user={user} />
+      <ProfileHeader user={user} />
       <ProfileInfo user={user} />
     </div>
   );
