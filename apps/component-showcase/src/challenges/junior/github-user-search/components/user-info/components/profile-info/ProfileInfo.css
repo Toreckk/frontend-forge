@@ -21,11 +21,15 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
   flex: 1;
   gap: var(--spacing-200);
-  padding: var(--spacing-200) var(--spacing-250);
+  padding: var(--spacing-200) var(--spacing-400);
   border-radius: var(--radius-10);
   background-color: var(--bg-primary);
+  text-align: left;
 }
 
 .stat-item {
@@ -37,7 +41,7 @@
 
 .label {
   color: var(--text-secondary);
-  font-size: var(--font-size-13);
+  font-size: var(--font-size-11);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-150);
   letter-spacing: var(--letter-spacing-0);
@@ -45,7 +49,7 @@
 
 .count {
   color: var(--text-primary);
-  font-size: var(--font-size-22);
+  font-size: var(--font-size-16);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-140);
 }
@@ -63,16 +67,60 @@
   flex-direction: row;
   align-items: center;
   gap: var(--spacing-200);
+  width: 100%;
 }
 
 .icon {
   color: var(--icon-primary);
+  width: 20px;
+  text-align: center;
 }
 
 .link-value {
   color: var(--text-secondary);
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-13);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-150);
   letter-spacing: var(--letter-spacing-0);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-bio {
+    font-size: var(--font-size-15);
+  }
+
+  .stats-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--spacing-200) var(--spacing-400);
+    text-align: left;
+  }
+
+  .stat-item {
+    align-items: flex-start;
+  }
+
+  .label {
+    font-size: var(--font-size-13);
+  }
+
+  .count {
+    font-size: var(--font-size-22);
+  }
+
+  .links-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-200) var(--spacing-400);
+  }
+
+  .link-value {
+    font-size: var(--font-size-15);
+  }
 }

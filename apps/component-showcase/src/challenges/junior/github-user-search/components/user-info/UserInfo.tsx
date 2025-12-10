@@ -10,6 +10,7 @@ interface UserInfoProps {
 export const UserInfo = ({ user }: UserInfoProps) => {
   return (
     <div className="user-info">
+      <img src={user?.avatar_url} alt="User avatar" className="profile-image" />
       <ProfileHeader user={user} />
       <ProfileInfo user={user} />
     </div>

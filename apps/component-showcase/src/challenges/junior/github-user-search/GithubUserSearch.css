@@ -82,7 +82,6 @@
 }
 
 .github-user-search {
-  /* Theme Variables - Light Mode (Default) */
   --bg-primary: var(--color-neutral-100);
   --bg-secondary: var(--color-neutral-0);
   --text-primary: var(--color-neutral-700);
@@ -98,7 +97,6 @@
   padding: var(--spacing-400) var(--spacing-200);
 }
 
-/* Dark Theme Override */
 .github-user-search.dark {
   --bg-primary: var(--color-neutral-900);
   --bg-secondary: var(--color-neutral-800);
@@ -114,7 +112,7 @@
   .github-user-search {
     width: 100vw;
     height: 100vh;
-    padding: 130px 355px;
+    padding: var(--spacing-400);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -138,12 +136,14 @@
 
 @media (min-width: 768px) {
   .main-content {
-    min-width: 704px;
+    max-width: 573px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   .main-content {
-    min-width: 730px;
+    max-width: 730px;
+    width: 100%;
   }
 }
