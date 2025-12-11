@@ -42,4 +42,12 @@
   color: var(--color-neutral-0);
   padding: var(--spacing-150) var(--spacing-250);
   border-radius: var(--radius-10);
+
+  &:hover {
+    background-color: var(--color-blue-300);
+  }
+
+  &:active {
+    background-color: var(--color-blue-500);
+  }
 }

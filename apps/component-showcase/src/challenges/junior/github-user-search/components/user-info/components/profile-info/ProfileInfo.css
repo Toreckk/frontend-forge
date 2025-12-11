@@ -73,6 +73,8 @@
 .icon {
   color: var(--icon-primary);
   width: 20px;
+  min-width: 20px;
+  flex-shrink: 0;
   text-align: center;
 }
 
@@ -86,7 +88,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
+  min-width: 0;
 }
 
 @media (min-width: 768px) {
@@ -118,9 +120,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-200) var(--spacing-400);
+    max-width: 480px;
   }
 
   .link-value {
     font-size: var(--font-size-15);
+  }
+
+  .link-item {
+    min-width: 0;
   }
 }

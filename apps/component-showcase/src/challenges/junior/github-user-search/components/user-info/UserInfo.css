@@ -36,8 +36,9 @@
   .user-info {
     padding: var(--spacing-500);
     gap: var(--spacing-400);
+    max-width: 730px;
 
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 117px 1fr;
     grid-template-areas:
       "avatar header"
       "avatar info";
@@ -51,5 +52,9 @@
 
   .profile-header-info {
     padding-left: 0;
+  }
+
+  .profile-info {
+    max-width: 480px;
   }
 }

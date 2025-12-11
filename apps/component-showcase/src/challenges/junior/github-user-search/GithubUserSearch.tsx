@@ -10,7 +10,7 @@ const GithubUserSearch = () => {
     <div className="github-user-search">
       <div className="main-content">
         <Navbar />
-        <SearchBar />
+        <SearchBar onClick={searchUser} />
         <UserInfo user={user} />
       </div>
     </div>

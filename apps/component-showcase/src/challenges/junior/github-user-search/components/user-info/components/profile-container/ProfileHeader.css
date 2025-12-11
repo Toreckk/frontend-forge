@@ -37,6 +37,20 @@
 }
 
 @media (min-width: 768px) {
+  .username {
+    font-size: var(--font-size-26);
+  }
+
+  .handle {
+    font-size: var(--font-size-16);
+  }
+
+  .joined-date {
+    font-size: var(--font-size-15);
+  }
+}
+
+@media (min-width: 1024px) {
   .profile-header-info {
     flex-direction: row !important;
     flex-wrap: nowrap;
@@ -49,16 +63,7 @@
     flex-shrink: 0;
   }
 
-  .username {
-    font-size: var(--font-size-26);
-  }
-
-  .handle {
-    font-size: var(--font-size-16);
-  }
-
   .joined-date {
-    font-size: var(--font-size-15);
     white-space: nowrap;
     margin-top: 8px;
   }
