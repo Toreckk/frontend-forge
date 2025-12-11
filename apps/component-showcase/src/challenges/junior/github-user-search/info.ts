@@ -8,7 +8,7 @@ export const info: ChallengeMeta = {
   title: "GitHub user search component",
   thumbnailUrl:
     "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/vnhorbifareii6uedrt4.jpg",
-  status: "WIP",
+  status: "Completed",
   difficulty: "Junior",
   level: 2,
   languages: ["HTML", "CSS", "JS", "API"],
