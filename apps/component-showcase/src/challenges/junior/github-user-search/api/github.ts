@@ -2,13 +2,16 @@ import type { GithubUser } from "../types/github";
 
 export const fetchGithubUser = async (
   username: string
-): Promise<GithubUser | null> => {
+): Promise<GithubUser> => {
   const response = await fetch(`https://api.github.com/users/${username}`);
-  try {
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-    return null;
+
+  if (!response.ok) {
+    if (response.status === 404) {
+      throw new Error("User not found");
+    }
+    throw new Error(`GitHub API error: ${response.status}`);
   }
+
+  const data = await response.json();
+  return data;
 };
