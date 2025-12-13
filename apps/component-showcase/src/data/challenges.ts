@@ -6,6 +6,7 @@ import { info as resultsSummary } from "../challenges/newbie/results-summary/inf
 import { info as githubUserSearch } from "../challenges/junior/github-user-search/info";
 import { info as newsletter } from "../challenges/junior/newsletter-sign-up/info";
 import { info as spaceTourism } from "../challenges/intermediate/space-tourism/info";
+import { info as mortgageCalculator } from "../challenges/junior/mortgage-calculator/info";
 import type { ChallengeMeta } from "../types/challenge";
 
 export const allChallenges: ChallengeMeta[] = [
@@ -14,6 +15,7 @@ export const allChallenges: ChallengeMeta[] = [
   socialLinksProfile,
   resultsSummary,
   githubUserSearch,
+  mortgageCalculator,
   newsletter,
   spaceTourism,
 ];
